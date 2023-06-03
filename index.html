@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" defer></script>
+
+    <title>Image Slider</title>
+  </head>
+  <body>
+    <div class="slider-container relative capitalize mt-5">
+      <div
+        class="caption absolute text-white z-10 px-4 py-1 left-3 top-3 bg-black/40"
+      >
+        slide
+        <span class="current"></span>
+        of
+        <span class="slides-num"></span>
+      </div>
+
+      <div class="image-container bg-blue-300">
+        <div class="images relative">
+          <img class="active" src="images/img-1.jpg" alt="" />
+          <img src="images/img-2.jpg" alt="" />
+          <img src="images/img-3.jpg" alt="" />
+        </div>
+      </div>
+
+      <footer class="mt-3 flex justify-between items-center px-2 pb-2">
+        <a class="previous block" href="#">previous</a>
+        <div class="indexes flex gap-1 items-center"></div>
+        <a class="next" href="#">next</a>
+      </footer>
+    </div>
+  </body>
+</html>

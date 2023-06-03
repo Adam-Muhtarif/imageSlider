@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+.slider-container {
+  margin: auto;
+  width: 550px;
+}
+.image-container {
+  height: 300px;
+}
+.images {
+  height: fit-content;
+}
+.images img {
+  min-width: 100%;
+  height: 300px;
+  position: absolute;
+  z-index: 0;
+  transition: .3s;
+}
+.images img.active {
+  z-index: 1;
+}
+.previous,
+.next {
+  background-color: green;
+  color: white;
+  padding: 0.3rem 25px;
+  transition: .3s;
+}
+.previous.block,
+.next.block {
+  background-color: rgba(0, 128, 0, 50%);
+  pointer-events: none;
+}
+.indexes a {
+  cursor: pointer;
+  padding: 0.3rem 10px;
+  transition: 0.3s;
+}
+.indexes a:hover {
+  background-color: green;
+  color: white;
+}
+.indexes a.active {
+  background-color: green;
+  color: white;
+}
